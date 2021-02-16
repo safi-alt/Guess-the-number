@@ -1,20 +1,8 @@
 import React from "react";
-import {
-  View,
-  Text,
-  StyleSheet,
-  Button,
-  TouchableOpacity,
-  TouchableNativeFeedback,
-  Platform,
-} from "react-native";
+import { View, Text, StyleSheet, Button, TouchableOpacity } from "react-native";
 import Colors from "../constants/Colors";
 
 let ButtonComponent = TouchableOpacity;
-
-if (Platform.OS === "android" && Platform.Version >= 21) {
-  ButtonComponent = TouchableNativeFeedback;
-}
 
 const MainButton = (props) => {
   return (
